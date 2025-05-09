@@ -46,6 +46,31 @@ namespace Ecommerce.Migrations
                     b.ToTable("Otps");
                 });
 
+            modelBuilder.Entity("Ecommerce.Models.Entities.PasswordResetToken", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("ExpiryTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Token")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("PasswordResetTokens");
+                });
+
             modelBuilder.Entity("Ecommerce.Models.Entities.RefreshToken", b =>
                 {
                     b.Property<int>("Id")
@@ -54,14 +79,12 @@ namespace Ecommerce.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("DeviceId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("ExpiryDate")
                         .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsRevoked")
-                        .HasColumnType("bit");
 
                     b.Property<string>("Token")
                         .IsRequired()
@@ -101,9 +124,25 @@ namespace Ecommerce.Migrations
                     b.Property<int>("Role")
                         .HasColumnType("int");
 
+                    b.Property<int?>("UserId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
+                    b.HasIndex("UserId");
+
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("Ecommerce.Models.Entities.PasswordResetToken", b =>
+                {
+                    b.HasOne("Ecommerce.Models.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Ecommerce.Models.Entities.RefreshToken", b =>
@@ -119,7 +158,16 @@ namespace Ecommerce.Migrations
 
             modelBuilder.Entity("Ecommerce.Models.Entities.User", b =>
                 {
+                    b.HasOne("Ecommerce.Models.Entities.User", null)
+                        .WithMany("Users")
+                        .HasForeignKey("UserId");
+                });
+
+            modelBuilder.Entity("Ecommerce.Models.Entities.User", b =>
+                {
                     b.Navigation("RefreshTokens");
+
+                    b.Navigation("Users");
                 });
 #pragma warning restore 612, 618
         }

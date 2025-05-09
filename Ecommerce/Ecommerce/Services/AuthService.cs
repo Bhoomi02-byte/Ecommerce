@@ -11,11 +11,13 @@ namespace Ecommerce.Services
     {
         private readonly ApplicationDbContext _context;
         private readonly GenerateJwtToken _token;
+        private readonly EmailService _emailService;
 
-        public AuthService(ApplicationDbContext context, GenerateJwtToken token)
+        public AuthService(ApplicationDbContext context, GenerateJwtToken token,EmailService emailService)
         {
             _context = context;
             _token = token;
+            _emailService = emailService;
         }
 
         public async Task<string> SignupEmailAsync(EmailSignupDto dto)
@@ -124,7 +126,7 @@ namespace Ecommerce.Services
             return responseData;
         }
 
-        public async Task<object?>LoginEmailAsync(EmailLoginDto dto)
+        public async Task<object>LoginEmailAsync(EmailLoginDto dto)
         {
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == dto.Email);
 
@@ -206,9 +208,9 @@ namespace Ecommerce.Services
         public async Task<object?> LoginPhoneAsync(PhoneLoginDto dto)
         {
             var otpEntry = await _context.Otps.FirstOrDefaultAsync(x =>
-       x.PhoneNumber == dto.PhoneNumber &&
-       x.OtpCode == dto.OtpCode &&
-       x.ExpiryTime > DateTime.UtcNow);
+           x.PhoneNumber == dto.PhoneNumber &&
+           x.OtpCode == dto.OtpCode &&
+           x.ExpiryTime > DateTime.UtcNow);
 
             if (otpEntry == null)
                 return null;
@@ -230,6 +232,68 @@ namespace Ecommerce.Services
 
             await _context.SaveChangesAsync();
 
+            var responseData = new
+            {
+                accessToken,
+                refreshToken
+            };
+
+            return responseData;
+        }
+
+        public async Task<bool> ForgotPasswordAsync(ForgotPasswordDto dto)
+        {
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == dto.Email);
+            if (user == null) return false;
+
+            var token = Guid.NewGuid().ToString();
+            var expiry = DateTime.UtcNow.AddHours(1);
+
+            var resetToken = new PasswordResetToken
+            {
+                Token = token,
+                UserId = user.Id,
+                ExpiryTime = expiry
+            };
+
+            _context.PasswordResetTokens.Add(resetToken);
+            await _context.SaveChangesAsync();
+
+            var resetLink = $"https://Ecommerce.com/reset-password?token={token}";
+            await _emailService.SendEmailAsync(user.Email, "Reset Password", $"Click to reset: {resetLink}");
+
+            return true;
+        }
+        public async Task<object?> ResetPasswordAsync(ResetPasswordDto dto)
+        {
+            var resetToken = await _context.PasswordResetTokens
+                .Include(x => x.User)
+                .FirstOrDefaultAsync(x => x.Token == dto.Token && x.ExpiryTime > DateTime.UtcNow);
+
+            if (resetToken == null) return null;
+
+            var user = resetToken.User;
+
+            string hashedPassword = BCrypt.Net.BCrypt.HashPassword(dto.NewPassword);
+            user.Password = hashedPassword;
+
+            _context.PasswordResetTokens.Remove(resetToken);
+
+            var existingTokens = _context.RefreshTokens.Where(rt => rt.UserId == user.Id);
+            _context.RefreshTokens.RemoveRange(existingTokens);
+
+            var accessToken = _token.GenerateToken(user, "Access");
+            var refreshToken = _token.GenerateToken(user, "Refresh");
+
+            _context.RefreshTokens.Add(new RefreshToken
+            {
+                Token = refreshToken,
+                UserId = user.Id,
+                ExpiryDate = DateTime.UtcNow.AddDays(7),
+                DeviceId = Guid.NewGuid().ToString()
+            });
+
+            await _context.SaveChangesAsync();
             var responseData = new
             {
                 accessToken,

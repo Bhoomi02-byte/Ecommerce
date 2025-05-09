@@ -21,7 +21,7 @@ namespace Ecommerce.Services
             .Include(rt => rt.User)
             .FirstOrDefaultAsync(rt => rt.Token == dto.RefreshToken);
 
-            if (storedToken == null || storedToken.IsRevoked || storedToken.ExpiryDate < DateTime.UtcNow)
+            if (storedToken == null || storedToken.ExpiryDate < DateTime.UtcNow)
             {
                 return null;
             }

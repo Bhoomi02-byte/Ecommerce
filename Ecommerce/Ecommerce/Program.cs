@@ -9,14 +9,13 @@ using Serilog;
 using System.Text; 
 
 var builder = WebApplication.CreateBuilder(args);
-
-
 var jwtSettings = builder.Configuration.GetSection("Jwt");
 
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     options.DefaultChallengeScheme  =   JwtBearerDefaults.AuthenticationScheme;
+
 }).AddJwtBearer(options =>  
  {
     options.TokenValidationParameters = new TokenValidationParameters
@@ -33,6 +32,8 @@ builder.Services.AddAuthentication(options =>
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+builder.Services.AddSingleton<EmailService>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

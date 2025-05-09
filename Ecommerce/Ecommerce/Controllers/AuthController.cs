@@ -35,7 +35,7 @@ namespace Ecommerce.Controllers
         {
             var result = await _authService.SendOtpAsync(dto);
 
-            if (result == "OTP sent to console")
+            if (result == "OTP sent")
                 return Ok(new ApiResponse(200, true, result, null));
 
             return BadRequest(new ApiResponse(400, false, result, null));
@@ -71,9 +71,10 @@ namespace Ecommerce.Controllers
             var result = await _authService.LoginSendOtpAsync(dto);
 
             if (result == null)
-                return Ok(new ApiResponse(200, true, "OTP sent successfully", result));
+                return BadRequest(new ApiResponse(400, false, "Failed", result));
 
-            return BadRequest(new ApiResponse(400, false, "Failed", result));
+            return Ok(new ApiResponse(200, true, "OTP sent successfully", result));
+           
         }
         [HttpPost("login/phone")]
         public async Task<IActionResult> LoginPhone([FromBody] PhoneLoginDto dto)
@@ -81,9 +82,9 @@ namespace Ecommerce.Controllers
             var result = await _authService.LoginPhoneAsync(dto);
 
             if (result == null)
-                return Unauthorized(new { message = "Invalid phone number or OTP" });
+                return BadRequest(new ApiResponse(401, false, "Invalid phone number or OTP", null));
 
-            return Ok(result);
+            return Ok(new ApiResponse(200, true, "Login successful", result));
         }
 
 
@@ -93,10 +94,31 @@ namespace Ecommerce.Controllers
             var result = await _authService.LogoutAsync(dto);
 
             if (result == null)
-                return NotFound("No active session found for this device.");
+                return NotFound(new ApiResponse(404, false, "No active session found for this device.", null));
 
-            return Ok(new { message = result });
+            return Ok(new ApiResponse(200, true, result, null));
         }
+
+        [HttpPost("forgot-password")]
+        public async Task<IActionResult> ForgotPassword([FromBody] ForgotPasswordDto dto)
+        {
+            var result = await _authService.ForgotPasswordAsync(dto);
+            if (!result)
+                return NotFound(new ApiResponse(404, false, "Email not registered.", null));
+
+            return Ok(new ApiResponse(200, true, "Reset link sent to email.", null));
+        }
+
+        [HttpPost("reset-password")]
+        public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordDto dto)
+        {
+            var result = await _authService.ResetPasswordAsync(dto);
+            if (result == null)
+                return BadRequest(new ApiResponse(400, false, "Invalid or expired token.", null));
+
+            return Ok(new ApiResponse(200, true, "Password reset successful.", result));
+        }
+
 
     }
 }
