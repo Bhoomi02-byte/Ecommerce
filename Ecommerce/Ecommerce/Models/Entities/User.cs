@@ -14,9 +14,8 @@ namespace Ecommerce.Models.Entities
         public string? Password { get; set; }
         public string PhoneNumber { get; set; }
         public UserRole Role { get; set; }
-
         public ICollection<RefreshToken> RefreshTokens { get; set; }
-        public ICollection<User> Users { get; set; }
+        public ICollection<Wishlist> Wishlists { get; set; }
 
     }
 }

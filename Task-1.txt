@@ -556,40 +556,7 @@ Apis to create the project:-
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
-    7)Wishlist
-
-      endpoint:POST api/wishlist
-
-      Request Body
-
-      {
-          "productId": 1,
-          "color": "Red",
-          "size": "M"
-      }
-
-      Response Body
-
-      {
-      "success": true,
-      "status_code": 200,
-      "message": "Product added to wishlist successfully.",
-      "data": {
-        "wishlistId": 123,
-        "userId": 1,
-        "items": [
-          {
-            "productId": 1,
-            "name": "Shoes",
-            "color": "Red",
-            "size": "M",
-            "price": 1299,
-            
-          }
-        ]
-      }
-    }
-    --------------------------------------------------------------------------------------------------------------------------------------------------
+   
 
     8)My Orders
 
