@@ -18,7 +18,7 @@ namespace Ecommerce.DTO
         public string State { get; set; }
 
         [Required(ErrorMessage = "Zip code is required.")]
-        [RegularExpression(@"^\d{5}(-\d{4})?$", ErrorMessage = "Invalid Zip code format.")]
+        //[RegularExpression(@"^\d{5}(-\d{4})?$", ErrorMessage = "Invalid Zip code format.")]
         public string ZipCode { get; set; }
 
         [Required(ErrorMessage = "Country is required.")]

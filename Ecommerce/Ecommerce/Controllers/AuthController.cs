@@ -23,7 +23,7 @@ namespace Ecommerce.Controllers
         {
             var user = await _authService.SignupEmailAsync(dto);
 
-            if (user == "User signup successfully")
+            if (user == JsonHelper.GetMessage(103))
             {
                 return Ok(new ApiResponse(200,true,user,null));
             }
@@ -35,7 +35,7 @@ namespace Ecommerce.Controllers
         {
             var result = await _authService.SendOtpAsync(dto);
 
-            if (result == "OTP sent")
+            if (result == JsonHelper.GetMessage(105))
                 return Ok(new ApiResponse(200, true, result, null));
 
             return BadRequest(new ApiResponse(400, false, result, null));
@@ -47,13 +47,13 @@ namespace Ecommerce.Controllers
             var result = await _authService.SignupPhoneAsync(dto);
 
             if (result == null)
-                return BadRequest(new ApiResponse(400, false, "Invalid or expired OTP", null));
+                return BadRequest(new ApiResponse(400, false, JsonHelper.GetMessage(106), null));
 
-            if(result == "Phone number already registered")
-                return BadRequest(new ApiResponse(400, false, "Phone number already registered", null));
+            if(result == JsonHelper.GetMessage(107))
+                return BadRequest(new ApiResponse(400, false, JsonHelper.GetMessage(107), null));
 
 
-            return Ok(new ApiResponse(201, true, "User registered successfully", result));
+            return Ok(new ApiResponse(201, true, JsonHelper.GetMessage(108), result));
   
         }
 
@@ -61,9 +61,9 @@ namespace Ecommerce.Controllers
         public async Task<IActionResult> LoginEmail([FromBody] EmailLoginDto dto)
         {
             var response = await _authService.LoginEmailAsync(dto);
-            if(response == null) return BadRequest(new ApiResponse(400, false, "User does not exist!", null));
+            if(response == null) return BadRequest(new ApiResponse(400, false, JsonHelper.GetMessage(105), null));
 
-            return Ok(new ApiResponse(201, true, "User login successfully", response));
+            return Ok(new ApiResponse(201, true, JsonHelper.GetMessage(110) , response));
         }
         [HttpPost("login/send-otp")]
         public async Task<IActionResult> LoginSendOtp([FromBody] PhoneOtpRequestDto dto)
@@ -73,7 +73,7 @@ namespace Ecommerce.Controllers
             if (result == null)
                 return BadRequest(new ApiResponse(400, false, "Failed", result));
 
-            return Ok(new ApiResponse(200, true, "OTP sent successfully", result));
+            return Ok(new ApiResponse(200, true, JsonHelper.GetMessage(105), result));
            
         }
         [HttpPost("login/phone")]
@@ -82,11 +82,10 @@ namespace Ecommerce.Controllers
             var result = await _authService.LoginPhoneAsync(dto);
 
             if (result == null)
-                return BadRequest(new ApiResponse(401, false, "Invalid phone number or OTP", null));
+                return BadRequest(new ApiResponse(401, false, JsonHelper.GetMessage(111), null));
 
-            return Ok(new ApiResponse(200, true, "Login successful", result));
+            return Ok(new ApiResponse(200, true, JsonHelper.GetMessage(110), result));
         }
-
 
         [HttpPost("logout")]
         public async Task<IActionResult> Logout([FromBody] LogoutDto dto)
@@ -94,7 +93,7 @@ namespace Ecommerce.Controllers
             var result = await _authService.LogoutAsync(dto);
 
             if (result == null)
-                return NotFound(new ApiResponse(404, false, "No active session found for this device.", null));
+                return NotFound(new ApiResponse(404, false, JsonHelper.GetMessage(112), null));
 
             return Ok(new ApiResponse(200, true, result, null));
         }
@@ -104,9 +103,9 @@ namespace Ecommerce.Controllers
         {
             var result = await _authService.ForgotPasswordAsync(dto);
             if (!result)
-                return NotFound(new ApiResponse(404, false, "Email not registered.", null));
+                return NotFound(new ApiResponse(404, false, JsonHelper.GetMessage(114), null));
 
-            return Ok(new ApiResponse(200, true, "Reset link sent to email.", null));
+            return Ok(new ApiResponse(200, true, JsonHelper.GetMessage(115), null));
         }
 
         [HttpPost("reset-password")]
@@ -114,9 +113,9 @@ namespace Ecommerce.Controllers
         {
             var result = await _authService.ResetPasswordAsync(dto);
             if (result == null)
-                return BadRequest(new ApiResponse(400, false, "Invalid or expired token.", null));
+                return BadRequest(new ApiResponse(400, false, JsonHelper.GetMessage(116), null));
 
-            return Ok(new ApiResponse(200, true, "Password reset successful.", result));
+            return Ok(new ApiResponse(200, true, JsonHelper.GetMessage(117), result));
         }
 
 

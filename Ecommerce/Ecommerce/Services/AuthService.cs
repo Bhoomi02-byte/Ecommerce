@@ -23,11 +23,11 @@ namespace Ecommerce.Services
         public async Task<string> SignupEmailAsync(EmailSignupDto dto)
         {
             var existingEmail = await _context.Users.AnyAsync(x => x.Email == dto.Email);
-            if (existingEmail) return "Email already registered";
+            if (existingEmail) return JsonHelper.GetMessage(101);
             
 
             var existingPhone = await _context.Users.AnyAsync(x => x.PhoneNumber == dto.PhoneNumber);
-            if (existingPhone)  return "Phone number already registered";
+            if (existingPhone) return JsonHelper.GetMessage(102);
             
 
             string hashedPassword = BCrypt.Net.BCrypt.HashPassword(dto.Password);
@@ -43,12 +43,12 @@ namespace Ecommerce.Services
             _context.Users.Add(newUser);
             await _context.SaveChangesAsync();
 
-            return "User signup successfully";
+            return JsonHelper.GetMessage(103);
         }
         public async Task<string> SendOtpAsync(PhoneOtpRequestDto dto)
         {
             var phoneNumber = await _context.Users.AnyAsync(x => x.PhoneNumber == dto.PhoneNumber);
-            if (phoneNumber) return "PhoneNumber is already exist";
+            if (phoneNumber) return JsonHelper.GetMessage(104);
 
             var existingOtp = await _context.Otps
             .FirstOrDefaultAsync(x => x.PhoneNumber == dto.PhoneNumber);
@@ -73,10 +73,9 @@ namespace Ecommerce.Services
 
                 _context.Otps.Add(newOtp);
             }
-
-          
+ 
             await _context.SaveChangesAsync();
-            return "OTP sent";
+            return JsonHelper.GetMessage(105);
         }
 
         public async Task<object?> SignupPhoneAsync(PhoneSignupDto dto)
@@ -91,7 +90,7 @@ namespace Ecommerce.Services
 
             var userExists = await _context.Users.AnyAsync(x => x.PhoneNumber == dto.PhoneNumber);
             if (userExists)
-                return "Phone number already registered";
+                return JsonHelper.GetMessage(107);
 
             var user = new User
             {
@@ -168,7 +167,7 @@ namespace Ecommerce.Services
             _context.RefreshTokens.Remove(refreshToken);
             await _context.SaveChangesAsync();
 
-            return "Logged out from device successfully.";
+            return JsonHelper.GetMessage(113);
         }
         public async Task<object?> LoginSendOtpAsync(PhoneOtpRequestDto dto)
         {
@@ -202,7 +201,7 @@ namespace Ecommerce.Services
                 _context.Otps.Add(newOtp);
             }
             await _context.SaveChangesAsync();
-            return "OTP sent";
+            return JsonHelper.GetMessage(105);
         }
 
         public async Task<object?> LoginPhoneAsync(PhoneLoginDto dto)
@@ -260,7 +259,7 @@ namespace Ecommerce.Services
             await _context.SaveChangesAsync();
 
             var resetLink = $"https://Ecommerce.com/reset-password?token={token}";
-            await _emailService.SendEmailAsync(user.Email, "Reset Password", $"Click to reset: {resetLink}");
+            await _emailService.SendEmailAsync(user.Email, JsonHelper.GetMessage(118), $"Click to reset: {resetLink}");
 
             return true;
         }
@@ -307,8 +306,6 @@ namespace Ecommerce.Services
         {
             return BCrypt.Net.BCrypt.Verify(enteredPassword, storedHashPassword);
         }
-
-
 
     }
 }

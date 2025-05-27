@@ -44,7 +44,15 @@ namespace Ecommerce.Data
             .HasOne(w => w.Product)
             .WithMany(p => p.Wishlists)
             .HasForeignKey(w => w.ProductId)
-            .OnDelete(DeleteBehavior.Restrict); 
+            .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Address>()
+                .HasIndex(a => new { a.Street, a.City, a.State, a.ZipCode })
+                .IsUnique();
+
+            modelBuilder.Entity<Variant>()
+                .HasIndex(v => new { v.Size, v.Color, v.ProductId })
+                .IsUnique();
         }
 
     }

@@ -20,14 +20,14 @@ namespace Ecommerce.Controllers
         }
 
         [HttpPost("wishlist")]
-        [Authorize(Roles = "customer")]
+        [Authorize(Roles = "Customer")]
         public async Task<IActionResult> AddToWishlist([FromBody] WishlistDto dto)
         {
             int userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value!);
 
             var response = await _userService.AddToWishlistAsync(userId, dto);
 
-            if (response == "Item already in wishlist.")
+            if (response == JsonHelper.GetMessage(130))
                 return BadRequest(new ApiResponse(400, false, response, null));
 
             return Ok(new ApiResponse(200, true, response, null));
@@ -40,25 +40,26 @@ namespace Ecommerce.Controllers
 
             var response = await _userService.AddToCartAsync(userId, dto);
             if (response == null)
-                return BadRequest(new ApiResponse(400, false, "Item do not add in wishlist.", null));
+                return BadRequest(new ApiResponse(400, false, JsonHelper.GetMessage(131), null));
 
             return Ok(new ApiResponse(200, true, response, null));
         }
 
-        [HttpDelete("cart/{cartItemId}")]
-        public async Task<IActionResult> RemoveFromCart(int cartItemId)
+        [HttpDelete("cart/{Id}")]
+        public async Task<IActionResult> RemoveFromCart(int Id)
         {
             int userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value!);
-            var response = await _userService.RemoveFromCartAsync(cartItemId, userId);
+            var response = await _userService.RemoveFromCartAsync(Id, userId);
 
-            if (response == "Item not found in Cart")
+            if (response == JsonHelper.GetMessage(132))
                 return BadRequest(new ApiResponse(400, false, response, null));
 
             return Ok(new ApiResponse(200, true, response, null));
         }
 
-        [HttpGet("cart")]
 
+        [HttpGet("cart")]
+        [Authorize(Roles = "Customer")]
         public async Task<IActionResult> GetCart()
         {
             int userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value!);
@@ -66,9 +67,9 @@ namespace Ecommerce.Controllers
             var cart = await _userService.GetCartByUserIdAsync(userId);
 
             if (cart == null)
-                return BadRequest(new ApiResponse(400, false, "Cart is empty", cart));
+                return BadRequest(new ApiResponse(404, false, JsonHelper.GetMessage(133), null));
 
-            return Ok(new ApiResponse(200, true, "Cart fetched successfully", cart));
+            return Ok(new ApiResponse(200, true, JsonHelper.GetMessage(134), cart));
         }
 
 

@@ -10,9 +10,9 @@ namespace Ecommerce.Controllers
     [Route("api/order")]
     public class OrderController : Controller
     {
-        private readonly UserService _userService;
+        private readonly IUserService _userService;
 
-        public OrderController(UserService userService)
+        public OrderController(IUserService userService)
         { 
             _userService = userService;
         }
@@ -24,7 +24,8 @@ namespace Ecommerce.Controllers
 
             var response = await _userService.PlaceOrderAsync( userId, dto);
 
-            if(response == "Cart is empty") return BadRequest(new ApiResponse(400, false, response, null));
+            if(response == JsonHelper.GetMessage(133))
+              return BadRequest(new ApiResponse(400, false, response, null));
 
             return Ok(new ApiResponse(200, true, response, null));
         }
