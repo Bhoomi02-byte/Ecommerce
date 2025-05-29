@@ -1,4 +1,5 @@
 ﻿using Ecommerce.DTO;
+using Ecommerce.Models.Entities;
 using Ecommerce.Utilities;
 
 namespace Ecommerce.Services
@@ -9,7 +10,9 @@ namespace Ecommerce.Services
         Task<string> UpdateAsync(ProductDto dto, int userId, int productId);
         Task<string> DeleteAsync(int userId, int productId);
         Task<object?> GetFilteredProductsAsync(string userId,ProductFilterDto query);
-        Task<List<object>> GetProductsByIdsAsync(List<string> ids);
+        Task<Product?> GetProductByIdAsync(int id);
+        Task<string> UploadImageAsync(int postId, int userId, IFormFile image, HttpRequest request);
+       
 
-    }
+        }
 }

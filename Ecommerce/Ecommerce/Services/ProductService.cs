@@ -120,12 +120,14 @@ namespace Ecommerce.Services
 
             return JsonHelper.GetMessage(125);
         }
-        public async Task<object?> GetFilteredProductsAsync(string userId,ProductFilterDto query)
+
+        public async Task<object?> GetFilteredProductsAsync(string userId, ProductFilterDto query)
         {
             var productsQuery = _context.Products
                 .Include(p => p.Variants)
                 .AsQueryable();
 
+            // Apply filters
             if (!string.IsNullOrWhiteSpace(query.Search))
                 productsQuery = productsQuery.Where(p => p.Name.Contains(query.Search));
 
@@ -144,15 +146,18 @@ namespace Ecommerce.Services
             if (!string.IsNullOrWhiteSpace(query.Color))
                 productsQuery = productsQuery.Where(p => p.Variants.Any(v => v.Color == query.Color));
 
-         
+            // Apply sorting
             productsQuery = query.SortBy switch
             {
                 "price_asc" => productsQuery.OrderBy(p => p.Price),
                 "price_desc" => productsQuery.OrderByDescending(p => p.Price),
                 _ => productsQuery.OrderBy(p => p.Name)
             };
-          
+
+            // Total count before paging
             int totalCount = await productsQuery.CountAsync();
+
+            // Paging and projection with filtered variants
             var products = await productsQuery
                 .Skip((query.PageNumber - 1) * query.PageSize)
                 .Take(query.PageSize)
@@ -165,19 +170,23 @@ namespace Ecommerce.Services
                     p.ImageUrl,
                     p.Description,
                     p.DressStyle,
-                    Variants = p.Variants.Select(v => new
-                    {
-                        v.Id,
-                        v.Size,
-                        v.Color,
-                        v.Count
-                    })
+                    Variants = p.Variants
+                        .Where(v =>
+                            (string.IsNullOrEmpty(query.Color) || v.Color == query.Color) &&
+                            (string.IsNullOrEmpty(query.Size) || v.Size == query.Size)
+                        )
+                        .Select(v => new
+                        {
+                            v.Id,
+                            v.Size,
+                            v.Color,
+                            v.Count
+                        })
                 })
                 .ToListAsync();
 
-            var productIds = products.Select(p => p.Id.ToString()).ToList();
-            await _redisService.AddToRecentlyViewedAsync(userId, productIds);
 
+            // Final paginated result
             var result = new
             {
                 TotalCount = totalCount,
@@ -190,35 +199,44 @@ namespace Ecommerce.Services
             return result;
         }
 
-        public async Task<List<object>> GetProductsByIdsAsync(List<string> ids)
+        public async Task<Product?> GetProductByIdAsync(int id)
         {
-            var intIds = ids.Select(int.Parse).ToList();
-
-            var products = await _context.Products
+            return await _context.Products
                 .Include(p => p.Variants)
-                .Where(p => intIds.Contains(p.Id)) 
-                .Select(p => new
-                {
-                    p.Id,
-                    p.Name,
-                    p.Price,
-                    p.Category,
-                    p.ImageUrl,
-                    p.Description,
-                    p.DressStyle,
-                    Variants = p.Variants.Select(v => new
-                    {
-                        v.Id,
-                        v.Size,
-                        v.Color,
-                        v.Count
-                    })
-                })
-                .ToListAsync();
-
-            return products.Cast<object>().ToList(); 
+                .FirstOrDefaultAsync(p => p.Id == id);
         }
+        public async Task<string> UploadImageAsync(int productId, int userId, IFormFile image, HttpRequest request)
+        {
+            var product = await _context.Products.FirstOrDefaultAsync(p => p.Id == productId);
+            if (product == null) return JsonHelper.GetMessage(165);
 
+            if (product.SellerId != userId) return JsonHelper.GetMessage(166);
+
+            var extension = Path.GetExtension(image.FileName);
+            var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
+
+            if (!allowedExtensions.Contains(extension.ToLower()))
+                return JsonHelper.GetMessage(167);
+
+            var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
+            Directory.CreateDirectory(uploadsFolder); 
+
+            var fileName = $"{Guid.NewGuid()}{extension}";
+            var filePath = Path.Combine(uploadsFolder, fileName);
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await image.CopyToAsync(stream);
+            }
+
+            var imageUrl = $"{request.Scheme}://{request.Host}/uploads/{fileName}";
+            product.ImageUrl = imageUrl;
+
+            _context.Products.Update(product);
+            await _context.SaveChangesAsync();
+
+            return JsonHelper.GetMessage(168);
+        }
 
 
     }

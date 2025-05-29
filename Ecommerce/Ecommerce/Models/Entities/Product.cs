@@ -16,3 +16,4 @@
         public ICollection<Wishlist> Wishlists { get; set; }
     }
 }
+    

@@ -2,7 +2,7 @@
 {
     public interface IRedisService
     {
-        Task AddToRecentlyViewedAsync(string userid,List<string> productIds);
+        Task AddToRecentlyViewedAsync(string userId, string productId);
         Task<List<string>> GetRecentlyViewedAsync(string userId);
     }
 

@@ -10,6 +10,7 @@ using System.Text;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
 using StackExchange.Redis;
+using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
 var jwtSettings = builder.Configuration.GetSection("Jwt");
@@ -48,7 +49,13 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
 builder.Services.AddSingleton<EmailService>();
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+        options.JsonSerializerOptions.DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull;
+    });
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IAuthService, AuthService>();
@@ -88,7 +95,10 @@ builder.Services.AddAuthorization();
 var app = builder.Build();
 
 app.UseMiddleware<GlobalExceptionHandlingMiddleware>();
-app.UseMiddleware<RequestResponseLoggingMiddleware>();  
+app.UseMiddleware<RequestResponseLoggingMiddleware>();
+
+app.UseStaticFiles();
+
 
 if (app.Environment.IsDevelopment())
 {

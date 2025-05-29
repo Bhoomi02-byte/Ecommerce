@@ -61,8 +61,15 @@
     "160": "You are not authorized to delete variants to this product.",
     "161": "Variant deleted successfully",
     "162": "Grouped variants fetched successfully",
-    "163": "This address has already been added."
-    
+    "163": "This address has already been added.",
+    "164": "Product fetched successfully",
+    "165": "Product does not exist!",
+    "166": "You are not authorize to upload this image",
+    "167": "Invalid image format.",
+    "168": "Image uploaded successfully",
+    "169": "Image is not uploaded! Try again",
+    "170": "Unauthorized access"
+
 
 
 }
