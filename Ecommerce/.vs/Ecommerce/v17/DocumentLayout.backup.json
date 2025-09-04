@@ -1,0 +1,995 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\responses.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\responses.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\models\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\models\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\services\\iredisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\services\\iredisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\services\\redisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\services\\redisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\dto\\variantdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\dto\\variantdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\models\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\models\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\controllers\\addresscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\controllers\\addresscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\services\\ivariantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\services\\ivariantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\controllers\\variantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\controllers\\variantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\services\\variantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\services\\variantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\middleware\\globalexceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\middleware\\globalexceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\models\\entities\\variant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\models\\entities\\variant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\dto\\coloroptiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\dto\\coloroptiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\dto\\productquerydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\dto\\productquerydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\dto\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\dto\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\dto\\addressdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\dto\\addressdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\utilities\\generatejwttoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\utilities\\generatejwttoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\dto\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\dto\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\utilities\\jsonhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\utilities\\jsonhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\utilities\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\utilities\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\services\\refreshtokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\services\\refreshtokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\controllers\\refreshtokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\controllers\\refreshtokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\ecommerce.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\ecommerce.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\models\\entities\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\models\\entities\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\models\\entities\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\models\\entities\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\models\\entities\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\models\\entities\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\dto\\resetpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\dto\\resetpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\dto\\emailsignupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\dto\\emailsignupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\dto\\phonelogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\dto\\phonelogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\dto\\refreshtokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\dto\\refreshtokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\dto\\phoneotprequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\dto\\phoneotprequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\dto\\phonesignupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\dto\\phonesignupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\dto\\wishlistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\dto\\wishlistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\dto\\logoutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\dto\\logoutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\dto\\cartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\dto\\cartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\dto\\forgotpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\dto\\forgotpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\dto\\emaillogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\dto\\emaillogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\migrations\\20250514073107_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\migrations\\20250514073107_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\services\\irefreshtokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\services\\irefreshtokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\models\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\models\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\models\\entities\\passwordresettoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\models\\entities\\passwordresettoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\models\\entities\\otp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\models\\entities\\otp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\middleware\\requestresponseloggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\middleware\\requestresponseloggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|c:\\users\\bhoom\\source\\repos\\ecommerce\\ecommerce\\ecommerce\\dto\\productfilterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7B6F0FB-3825-4DF4-A076-C9CF1B339BB6}|Ecommerce\\Ecommerce.csproj|solutionrelative:ecommerce\\dto\\productfilterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Ecommerce\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAuwG4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T05:30:32.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Services\\ProductService.cs",
+              "RelativeToolTip": "Ecommerce\\Services\\ProductService.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAqwLcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T05:33:08.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Program.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Program.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Program.cs",
+              "RelativeToolTip": "Ecommerce\\Program.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAiwGAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T05:35:28.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Models\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Models\\Entities\\Product.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Models\\Entities\\Product.cs",
+              "RelativeToolTip": "Ecommerce\\Models\\Entities\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T05:00:23.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Services\\IProductService.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Services\\IProductService.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Services\\IProductService.cs",
+              "RelativeToolTip": "Ecommerce\\Services\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T05:31:34.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "responses.json",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\responses.json",
+              "RelativeDocumentMoniker": "Ecommerce\\responses.json",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\responses.json",
+              "RelativeToolTip": "Ecommerce\\responses.json",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAEYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-25T17:09:44.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RedisService.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Services\\RedisService.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Services\\RedisService.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Services\\RedisService.cs",
+              "RelativeToolTip": "Ecommerce\\Services\\RedisService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T11:11:00.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IRedisService.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Services\\IRedisService.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Services\\IRedisService.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Services\\IRedisService.cs",
+              "RelativeToolTip": "Ecommerce\\Services\\IRedisService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T11:11:12.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Models\\Entities\\Order.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Models\\Entities\\Order.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Models\\Entities\\Order.cs",
+              "RelativeToolTip": "Ecommerce\\Models\\Entities\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T07:20:41.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "VariantDto.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\VariantDto.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\DTO\\VariantDto.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\VariantDto.cs",
+              "RelativeToolTip": "Ecommerce\\DTO\\VariantDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T05:49:48.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Ecommerce\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\appsettings.Development.json",
+              "RelativeToolTip": "Ecommerce\\appsettings.Development.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-05T06:05:22.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Services\\UserService.cs",
+              "RelativeToolTip": "Ecommerce\\Services\\UserService.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAuwFcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T11:50:05.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Ecommerce\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T12:44:09.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AddressController.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Controllers\\AddressController.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Controllers\\AddressController.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Controllers\\AddressController.cs",
+              "RelativeToolTip": "Ecommerce\\Controllers\\AddressController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwBsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T10:36:54.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IVariantService.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Services\\IVariantService.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Services\\IVariantService.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Services\\IVariantService.cs",
+              "RelativeToolTip": "Ecommerce\\Services\\IVariantService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T05:19:06.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Ecommerce\\Controllers\\UserController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwDMAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T05:34:07.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "VariantController.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Controllers\\VariantController.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Controllers\\VariantController.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Controllers\\VariantController.cs",
+              "RelativeToolTip": "Ecommerce\\Controllers\\VariantController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T12:17:02.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "VariantService.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Services\\VariantService.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Services\\VariantService.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Services\\VariantService.cs",
+              "RelativeToolTip": "Ecommerce\\Services\\VariantService.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAkwFYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T05:18:53.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "GlobalExceptionHandlingMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Middleware\\GlobalExceptionHandlingMiddleware.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Middleware\\GlobalExceptionHandlingMiddleware.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Middleware\\GlobalExceptionHandlingMiddleware.cs",
+              "RelativeToolTip": "Ecommerce\\Middleware\\GlobalExceptionHandlingMiddleware.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T17:40:09.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\appsettings.json",
+              "RelativeDocumentMoniker": "Ecommerce\\appsettings.json",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\appsettings.json",
+              "RelativeToolTip": "Ecommerce\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-26T12:55:18.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "ProductFilterDto.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\ProductFilterDto.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\DTO\\ProductFilterDto.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\ProductFilterDto.cs",
+              "RelativeToolTip": "Ecommerce\\DTO\\ProductFilterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T07:25:21.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Variant.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Models\\Entities\\Variant.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Models\\Entities\\Variant.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Models\\Entities\\Variant.cs",
+              "RelativeToolTip": "Ecommerce\\Models\\Entities\\Variant.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T10:09:13.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ColorOptionDto.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\ColorOptionDto.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\DTO\\ColorOptionDto.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\ColorOptionDto.cs",
+              "RelativeToolTip": "Ecommerce\\DTO\\ColorOptionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T05:51:16.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ProductQueryDto.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\ProductQueryDto.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\DTO\\ProductQueryDto.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\ProductQueryDto.cs",
+              "RelativeToolTip": "Ecommerce\\DTO\\ProductQueryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T18:10:06.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ProductDto.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\ProductDto.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\DTO\\ProductDto.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\ProductDto.cs",
+              "RelativeToolTip": "Ecommerce\\DTO\\ProductDto.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwB8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T05:49:29.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Services\\IUserService.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Services\\IUserService.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Services\\IUserService.cs",
+              "RelativeToolTip": "Ecommerce\\Services\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T11:50:23.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AddressDto.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\AddressDto.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\DTO\\AddressDto.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\AddressDto.cs",
+              "RelativeToolTip": "Ecommerce\\DTO\\AddressDto.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABQAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T11:05:33.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Ecommerce\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAmwDIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T05:46:17.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "GenerateJwtToken.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Utilities\\GenerateJwtToken.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Utilities\\GenerateJwtToken.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Utilities\\GenerateJwtToken.cs",
+              "RelativeToolTip": "Ecommerce\\Utilities\\GenerateJwtToken.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T12:01:40.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "OrderDto.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\OrderDto.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\DTO\\OrderDto.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\OrderDto.cs",
+              "RelativeToolTip": "Ecommerce\\DTO\\OrderDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T12:47:29.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Ecommerce\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T05:46:49.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Utilities\\EmailService.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Utilities\\EmailService.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Utilities\\EmailService.cs",
+              "RelativeToolTip": "Ecommerce\\Utilities\\EmailService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T09:40:11.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "JsonHelper.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Utilities\\JsonHelper.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Utilities\\JsonHelper.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Utilities\\JsonHelper.cs",
+              "RelativeToolTip": "Ecommerce\\Utilities\\JsonHelper.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAA/wB4AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T08:51:20.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "RefreshTokenService.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Services\\RefreshTokenService.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Services\\RefreshTokenService.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Services\\RefreshTokenService.cs",
+              "RelativeToolTip": "Ecommerce\\Services\\RefreshTokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T06:57:49.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Services\\AuthService.cs",
+              "RelativeToolTip": "Ecommerce\\Services\\AuthService.cs",
+              "ViewState": "AgIAAPwAAAAAAAAAAAAIwAIBAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T05:51:51.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "RefreshTokenController.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Controllers\\RefreshTokenController.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Controllers\\RefreshTokenController.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Controllers\\RefreshTokenController.cs",
+              "RelativeToolTip": "Ecommerce\\Controllers\\RefreshTokenController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T06:56:27.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Services\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Services\\IAuthService.cs",
+              "RelativeToolTip": "Ecommerce\\Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T07:29:48.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Ecommerce.csproj",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Ecommerce.csproj",
+              "RelativeDocumentMoniker": "Ecommerce\\Ecommerce.csproj",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Ecommerce.csproj",
+              "RelativeToolTip": "Ecommerce\\Ecommerce.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-08T11:40:56.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Models\\Entities\\Cart.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Models\\Entities\\Cart.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Models\\Entities\\Cart.cs",
+              "RelativeToolTip": "Ecommerce\\Models\\Entities\\Cart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T13:02:03.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Models\\Entities\\CartItem.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Models\\Entities\\CartItem.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Models\\Entities\\CartItem.cs",
+              "RelativeToolTip": "Ecommerce\\Models\\Entities\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T09:48:49.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Address.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Models\\Entities\\Address.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Models\\Entities\\Address.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Models\\Entities\\Address.cs",
+              "RelativeToolTip": "Ecommerce\\Models\\Entities\\Address.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T11:06:44.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Models\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Models\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Models\\Entities\\User.cs",
+              "RelativeToolTip": "Ecommerce\\Models\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T06:01:55.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ResetPasswordDto.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\ResetPasswordDto.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\DTO\\ResetPasswordDto.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\ResetPasswordDto.cs",
+              "RelativeToolTip": "Ecommerce\\DTO\\ResetPasswordDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T10:10:09.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "EmailSignupDto.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\EmailSignupDto.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\DTO\\EmailSignupDto.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\EmailSignupDto.cs",
+              "RelativeToolTip": "Ecommerce\\DTO\\EmailSignupDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T09:42:46.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "PhoneLoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\PhoneLoginDto.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\DTO\\PhoneLoginDto.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\PhoneLoginDto.cs",
+              "RelativeToolTip": "Ecommerce\\DTO\\PhoneLoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T09:22:17.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "RefreshTokenDto.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\RefreshTokenDto.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\DTO\\RefreshTokenDto.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\RefreshTokenDto.cs",
+              "RelativeToolTip": "Ecommerce\\DTO\\RefreshTokenDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T07:05:44.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "PhoneSignupDto.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\PhoneSignupDto.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\DTO\\PhoneSignupDto.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\PhoneSignupDto.cs",
+              "RelativeToolTip": "Ecommerce\\DTO\\PhoneSignupDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T09:22:21.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "PhoneOtpRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\PhoneOtpRequestDto.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\DTO\\PhoneOtpRequestDto.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\PhoneOtpRequestDto.cs",
+              "RelativeToolTip": "Ecommerce\\DTO\\PhoneOtpRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T09:22:19.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "WishlistDto.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\WishlistDto.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\DTO\\WishlistDto.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\WishlistDto.cs",
+              "RelativeToolTip": "Ecommerce\\DTO\\WishlistDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T11:45:53.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "LogoutDto.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\LogoutDto.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\DTO\\LogoutDto.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\LogoutDto.cs",
+              "RelativeToolTip": "Ecommerce\\DTO\\LogoutDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T06:42:17.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "CartDto.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\CartDto.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\DTO\\CartDto.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\CartDto.cs",
+              "RelativeToolTip": "Ecommerce\\DTO\\CartDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T13:04:00.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "ForgotPasswordDto.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\ForgotPasswordDto.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\DTO\\ForgotPasswordDto.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\ForgotPasswordDto.cs",
+              "RelativeToolTip": "Ecommerce\\DTO\\ForgotPasswordDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T10:09:48.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "EmailLoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\EmailLoginDto.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\DTO\\EmailLoginDto.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\DTO\\EmailLoginDto.cs",
+              "RelativeToolTip": "Ecommerce\\DTO\\EmailLoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T11:11:21.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "20250514073107_InitialMigration.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Migrations\\20250514073107_InitialMigration.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Migrations\\20250514073107_InitialMigration.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Migrations\\20250514073107_InitialMigration.cs",
+              "RelativeToolTip": "Ecommerce\\Migrations\\20250514073107_InitialMigration.cs",
+              "ViewState": "AgIAAK8AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T07:33:14.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "IRefreshTokenService.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Services\\IRefreshTokenService.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Services\\IRefreshTokenService.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Services\\IRefreshTokenService.cs",
+              "RelativeToolTip": "Ecommerce\\Services\\IRefreshTokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T06:57:19.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Models\\Entities\\OrderItem.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Models\\Entities\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Models\\Entities\\OrderItem.cs",
+              "RelativeToolTip": "Ecommerce\\Models\\Entities\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T04:40:14.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "PasswordResetToken.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Models\\Entities\\PasswordResetToken.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Models\\Entities\\PasswordResetToken.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Models\\Entities\\PasswordResetToken.cs",
+              "RelativeToolTip": "Ecommerce\\Models\\Entities\\PasswordResetToken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T10:00:26.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "Otp.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Models\\Entities\\Otp.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Models\\Entities\\Otp.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Models\\Entities\\Otp.cs",
+              "RelativeToolTip": "Ecommerce\\Models\\Entities\\Otp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T10:45:38.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "RequestResponseLoggingMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Middleware\\RequestResponseLoggingMiddleware.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Middleware\\RequestResponseLoggingMiddleware.cs",
+              "ToolTip": "C:\\Users\\bhoom\\source\\repos\\Ecommerce\\Ecommerce\\Ecommerce\\Middleware\\RequestResponseLoggingMiddleware.cs",
+              "RelativeToolTip": "Ecommerce\\Middleware\\RequestResponseLoggingMiddleware.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwAwAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T05:57:16.381Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

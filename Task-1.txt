@@ -1,0 +1,656 @@
+Apis to create the project:-
+
+1) Signup
+------------
+  To signup the page of ecommerce
+  firstly we do signup usign two methods:-
+
+   endpoint: POST api/auth/signup
+
+    1.1) Using email or password
+        ->Using name, email, password, role as a field.
+        ->Role is in enum either seller or user
+
+        Request Body                                   
+            {
+             "method" : "email",
+             "name" : "Bhoomi",
+             "email" : "xyz@gmail.com",
+             "password" : "######",
+             "role":"user"
+            }
+
+           Backend Logic:-
+                ->Validate required fields
+                ->Check if email already exists
+                ->Hash password using BCrypt
+                ->Save user in DB
+                ->Generate and return JWT token
+
+
+       Response Body
+           {
+           success:true,
+           status_code:200,
+           message:"Signup successfully",
+           data:[
+               "id":"1",
+               "name":"Bhoomi",
+               "email":"xyz@gmail.com",
+               "role":"user",
+               "access_token": "<ACCESS_TOKEN>",
+               "refresh_token": "<REFRESH_TOKEN>"
+               ]
+           }
+
+   
+      1.2)Using phone number or otp
+         
+         ->In the otp case , firstly request otp for phone signup
+            endpoint: POST api/auth/request-otp
+            
+            Request
+                {
+                 "phoneNumber":"+91XXXXXXXXXX"
+                }
+
+            Backend Logic:-
+                ->Validate phone format
+                ->Generate 6-digit OTP
+                ->Save OTP in database (with expiry time)
+                ->Log OTP in console (not SMS)
+
+
+            In console :
+            Generated OTP for phone no is: XXXXXX
+             
+            Response 
+                {
+                  "message":"otp sent to console"
+                }
+         
+         **Then signup using phone + otp**
+           enpoint: POST api/auth/signup
+
+           Request
+               {
+                "method":"phone",
+                "name": "Bhoomi",
+                "phoneNumber": "+91XXXXXXXXX",
+                "otp": "XXXXXX",
+                "role": "seller"
+               }
+
+           Backend Logic:-
+             ->Verify OTP from database
+             ->Check if phone number already registered
+             ->Save user (no password)
+             ->Generate and return JWT token
+
+             Response
+                {
+                   success:true,
+                   status_code:200,
+                   message:"Signup successfully",
+                   data:[
+                       "id":"1",
+                       "name":"Bhoomi",
+                       "phone":"+91XXXXXXXXXX",
+                       "role":"seller",
+                      "access_token": "<ACCESS_TOKEN>",
+                      "refresh_token": "<REFRESH_TOKEN>"
+                        ]
+                }
+---------------------------------------------------------
+        
+    2) Login
+    ----------
+
+       endpoint:POST api/auth/login
+
+       2.1)using phone no or otp
+          ->endpoint: POST api/auth/send-otp
+
+          Request
+              {
+                "phoneNumber":"+91XXXXXXXXXX"
+              }
+                 
+                 
+           In phone(sms) :
+            Generated OTP for phone no is: XXXXXX
+             
+           Response 
+               {
+                  "message":"otp sent to sms"
+               }
+
+
+         
+         **login by using this otp**
+          ->endpoint: POST api/auth/login
+           
+           Request
+               {
+                 "phone": "XXXXXXXXXXX",
+                 "otp": "XXXXXX"
+               }
+
+           Response
+               {
+                   success:true,
+                   status_code:200,
+                   message:"Login successfully",
+                   data:{
+                       "id":"1",
+                       "name":"Bhoomi",
+                       "role":"user",
+                       "access_token": "<ACCESS_TOKEN>",
+                       "refresh_token": "<REFRESH_TOKEN>"
+                       }
+               }
+
+
+        2.2)Using email or password
+            Request
+               {
+                 "email":"xyz@gmail.com",
+                 "password":"######"
+               }
+
+           Response
+              {
+               success:true,
+               status_code:200,
+               message:"Login successfully",
+               data:[
+                   "id":"1",
+                   "name":"Bhoomi",
+                   "email":"xyz@gmail.com",
+                   "role":"user",
+                  "access_token": "<ACCESS_TOKEN>",
+                  "refresh_token": "<REFRESH_TOKEN>"
+                   ]
+              }
+ 
+
+        2.3)Logout 
+        ---------
+        endpoint: POST api/auth/logout
+        ->Blacklist the token, one way is to use tokenversion
+        ->tokenversion can be update to invalidate the token
+       
+
+        2.4)Forgot_password
+        ------------------
+        endpoint: POST api/auth/forgot_password
+
+        ->User click on forgot password button, then user entered the mail then mail checks on DB it exist or not,
+        ->If it exist, then link is formed with (https://your-website.com/reset-password?token=<token>&email=user@example.com),
+        ->Then this token, mail, expiry minutes is saved in DB,
+        ->When the authenticated user click on this link, then token is comes with in link,
+        ->Then user enetered the password, the password is save in database, through this token the mail if find and the hashed password is save in db
+         
+         
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+    3)User profile access
+      user can access profile 
+
+      3.1)Fetch profile
+      endpoint: GET api/user/{userId}
+
+        request headers
+        Authorization: Bearer <ACCESS_TOKEN>
+
+        Response
+        {
+         "name":"bhoomi",
+         "email":"xyz@gmail.com",
+         "address": {
+            "street": "123 Main St",
+            "city": "Springfield",
+            "state": "IL",
+            "postalCode": "62701",
+            "country": "USA"
+         },
+         "phoneNumber":"+91XXXXXXXX",
+         "role":"user"
+        }
+
+      3.2)Update profile
+       enpoint: PUT api/user/{userId}
+       
+       request headers
+       Authorization: Bearer <ACCESS_TOKEN>
+
+        Request
+        {
+         "name":"bhoomi",
+         "email":"xyz@gmail.com",
+        "address": {
+            "street": "123 Main St",
+            "city": "Springfield",
+            "state": "IL",
+            "postalCode": "62701",
+            "country": "USA"
+           },
+         "phoneNumber":"+91XXXXXXXX",
+         "role":"user"
+        }
+
+        Response
+        {
+             success:true,
+             status_code:200,
+             message:"Profile updated successfully",
+             data:{
+                "id":"1",
+                "name":"Bhoomi",
+                "address": {
+                    "street": "123 Main St",
+                    "city": "Springfield",
+                    "state": "IL",
+                    "postalCode": "62701",
+                    "country": "USA"
+               },
+                "phoneNumber":"+91XXXXXXXX",
+                "role":"user"
+                  }
+        }
+
+       3.3)Delete profile
+        enpoint: DELETE api/user/{userId}
+       
+       request headers
+       Authorization: Bearer <ACCESS_TOKEN>
+
+
+        Response
+        {
+             success:true,
+             status_code:200,
+             message:"Profile deleted successfully",
+             data:{}
+        }
+
+  -------------------------------------------------------------------------------------------
+
+      4)Products
+
+       4.1)Create a product 
+         endpoint: POST api/products
+
+       request headers
+       Authorization: Bearer <ACCESS_TOKEN>
+
+       In models:-
+           public enum Size
+            {
+                Small,
+                Medium,
+                Large,
+                ExtraLarge
+            }
+
+           public enum Color
+            {
+                Red,
+                Blue,
+                Black,
+                White,
+                Green
+            }
+
+            public enum Dress_Style
+            {
+              Classic,
+              Casual,
+              Business,
+              Sport,
+              Elegant,
+              Formal(evening)
+            }
+
+       Request
+           { 
+            "Id":1,
+            "name":"shoes",
+            "price":1299,
+            "size":"Large",
+            "color":"Red",
+            "dress_style":"Sport",
+            "image":"product_image.jpg",
+            "description":"Walking shoes",
+            "category":"Women"
+
+           }
+
+        Response
+            {
+             success:true,
+             status_code:200,
+             message:"Product added successfully",
+             data:{}    
+            }
+
+
+        4.2)Update a product 
+          endpoint: PUT api/product/{productId}
+
+          request headers 
+          Authorization: Bearer <ACCESS_TOKEN>
+
+          Request
+               { 
+                "Id":1,
+                "name":"shoes",
+                "price":1299,
+                "size":"Large",
+                "color":"Red",
+                "dress_style":"Sport",
+                "image":"product_image.jpg",
+                "description":"Walking shoes",
+                "category":"Women"
+
+               }
+
+           Response
+                {
+                 success:true,
+                 status_code:200,
+                 message:"Product updated successfully",
+                 data:{}    
+                }
+
+           
+        4.3)delete a product
+          endpoint: DELETE api/product/{productId}
+
+          request headers
+          Authorization: Bearer <ACCESS_TOKEN>
+
+          Response
+          {
+              success:true,
+              status_code:200,
+              message:"Product deleted successfully",
+              data:{}  
+
+          }
+
+        4.4)Wishlist
+         endpoint: POST api/wishlist
+
+         request headers
+         Authorization: Bearer <ACCESS_TOKEN>
+
+         Request Body
+         {
+          "productId": 1,
+          "color": "Red",
+          "size": "M"
+         }
+
+         Response Body
+         {
+          "success": true,
+          "status_code": 200,
+          "message": "Product added to wishlist successfully.",
+          "data": {
+            "wishlistId": 123,
+            "userId": 1,
+            "items": [
+              {
+                "productId": 1,
+                "name": "Shoes",
+                "color": "Red",
+                "size": "M",
+                "price": 1299
+                
+              }
+            ]
+          }
+        }
+
+
+
+
+
+----------------------------------------------------------------------------------------
+
+     5)CART
+       ---------
+
+        5.1)Add To Cart
+         endpoint: POST api/cart
+
+          request headers
+          Authorization: Bearer <ACCESS_TOKEN>
+
+         Request Body
+         {
+           "productId": 1,
+            "quantity": 2,
+            "color": "Red",
+            "size": "M"
+         }
+
+         Response Body
+         {
+          "success": true,
+          "status_code": 200,
+          "message": "Product added to cart successfully.",
+          "data": {
+            "cartId": 123,
+            "userId": 1,
+            "items": [
+              {
+                "productId": 1,
+                "name": "Shoes",
+                "image":"product_image.jpg",
+                "quantity": 2,
+                "color": "Red",
+                "size": "M",
+                "price": 1299,
+                "totalPrice": 2598
+              }
+            ],
+            "totalPrice": 2598
+          }
+        }
+
+        5.2) Remove From Cart
+         endpoint: DELETE api/cart
+
+         request headers
+         Authorization: Bearer <ACCESS_TOKEN>
+
+         Request Body
+         {
+           "productId": 1,
+            "color": "Red",
+            "size": "M"
+         }
+
+         Response Body
+         {
+          "success": true,
+          "status_code": 200,
+          "message": "Product removed from cart successfully.",
+          "data": {}
+        }
+
+  -----------------------------------------------------------------------------------------------------------------------------------
+
+     6)Checkout
+        -------------
+        endpoint:POST api/checkout
+
+         Request headers
+         Authorization: Bearer <ACCESS_TOKEN>
+
+         Request Body
+         {
+          "address":
+          {
+            "street": "123 Main St",
+            "city": "Noida",
+            "state": "Uttar Pradesh",
+            "zipCode": "201301",
+            "country": "India"
+          },
+
+          "paymentMethod": "Credit Card",
+          "paymentDetails": {
+            "cardNumber": "1234567812345678",
+            "expiryDate": "12/25",
+            "cvv": "123"
+          }
+        }
+
+        Response Body
+        {
+          "success": true,
+          "status_code": 200,
+          "message": "Order placed successfully.",
+          "data": {
+           "transactionId": "TXN784512336",
+            "orderId": 12345,
+            "orderDate": "2025-04-28",
+            "shippingAddress":
+            {
+              "street": "123 Main St",
+              "city": "Noida",
+              "state": "Uttar Pradesh",
+              "zipCode": "201301",
+              "country": "India"
+            },
+            "paymentMethod": "Credit Card",
+            "totalPrice": 3497,
+           
+            "items": [
+              {
+                "productId": 1,
+                "name": "Shoes",
+                "quantity": 2,
+                "color": "Red",
+                "size": "M",
+                "price": 1299,
+                "totalPrice": 2598
+              },
+              {
+                "productId": 2,
+                "name": "Shirt",
+                "quantity": 1,
+                "color": "Blue",
+                "size": "L",
+                "price": 899,
+                "totalPrice": 899
+              }
+            ]
+          }
+        }
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+   
+
+    8)My Orders
+
+        8.1)Active
+        endpoint:GET api/orders/active
+        {
+          "success": true,
+          "status_code": 200,
+          "message": "Active orders fetched successfully",
+          "data": [
+            {
+              "orderId": 1001,
+              "orderDate": "2025-04-28T12:00:00Z",
+          
+              "products": [
+                {
+                  "productId": 1,
+                  "productName": "Nike Shoes",
+                  "color": "Red",
+                  "orderStatus": "Active",
+                  "paymentMethod": "COD",
+                  "quantity": 2,
+                  "price": 1299
+                },
+                {
+                  "productId": 2,
+                  "productName": "Adidas T-shirt",
+                  "color": "Blue",
+                  "orderStatus": "Active",
+                  "paymentMethod": "COD",
+                  "quantity": 1,
+                  "price": 899
+                }
+              ],
+         
+            },
+            {
+              "orderId": 1002,
+              "orderDate": "2025-04-25T15:30:00Z",
+              "orderStatus": "Active",
+              "paymentMethod": "Online",
+              "products": [
+                {
+                  "productId": 3,
+                  "productName": "Puma Hoodie",
+                  "color": "Black",
+                  "quantity": 1,
+                  "price": 1999
+                }
+              ],
+        
+            }
+          ]
+        }
+
+        8.2)Cancelled
+        endpoint: GET api/orders/cancelled
+         ->In cancelled, the cancelled product after those product which are ordered.
+       
+        8.3)Completed
+        endpoint: GET api/orders/completed
+        ->In completed, placed product is shown.
+
+        -----------------------------------------------------------------------------------------------------------------------------------------------
+
+    
+    
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        
+         
+           
+           
+          
+          
+       
+      
+
